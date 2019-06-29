@@ -112,10 +112,13 @@
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 950px) {
   .navigation ul li {
     display: none;
   }
+}
+
+@media only screen and (max-width: 450px) {
   .punch {
     display: none;
   }

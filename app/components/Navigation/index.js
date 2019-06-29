@@ -8,7 +8,14 @@ import React from 'react';
 
 import styles from './styles.css';
 
-function Navigation () {
+function Navigation ({links, avatar}) {
+
+  const renderLinks = () => {
+    return links.map((link, index) => (
+      <li key={index}><a href={`${link.url}`}>{link.name}</a></li>
+    ));
+  }
+
   return (
     <div className={`${styles.navigation} ${styles.shadow}`}>
     <div className={styles.navigation}>
@@ -23,15 +30,23 @@ function Navigation () {
     </div>
       <div className={styles.navigation}>
         <ul>
-          <li><a href="#findProduct">Find Products</a></li>
-          <li><a href="#findJobs">Find Jobs</a></li>
-          <li><a href="#findContacts">Find Peoples</a></li>
-          <li><a href="#myContacts">My Contacts</a></li>      
+          {renderLinks()}     
         </ul>
-        <img className={styles.image} src="https://avatars2.githubusercontent.com/u/25275856?s=460&v=4" />
+        {/* <img className={styles.image} src="https://avatars2.githubusercontent.com/u/25275856?s=460&v=4" /> */}
+        <img className={styles.image} src={`${avatar}`} />
       </div>
     </div>
   );
+}
+
+Navigation.propTypes = {
+  links: React.PropTypes.arrayOf(
+    React.PropTypes.shape({
+      name: React.PropTypes.string.isRequired,
+      url: React.PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  avatar: React.PropTypes.string.isRequired,
 }
 
 export default Navigation;

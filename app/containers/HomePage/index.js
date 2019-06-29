@@ -11,12 +11,16 @@
 
 import React from 'react';
 import NavigationContainer from '../../containers/NavigationContainer';
+import { ProfileContainer } from './../ProfileContainer/index';
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-      <NavigationContainer />
+      <div>
+        <NavigationContainer />
+        <ProfileContainer />
+      </div>
     );
   }
 }
