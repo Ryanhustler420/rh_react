@@ -1,3 +1,113 @@
-.navigation { /* stylelint-disable */
+.navigation {
+  /* stylelint-disable */
+  display: flex;
+  justify-content: space-between;
+}
 
+.shadow {
+  box-shadow: 0.5px 1px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+.navigation .brand {
+  cursor: pointer;
+  color: black;
+  margin: 1rem 0rem;
+  font-size: 2rem;
+}
+
+.navigation .image {
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.navigation .punch {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.navigation ul {
+  margin-top: 1.5rem;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline;
+  padding: 1.5rem 0rem;
+}
+
+.navigation li:hover {
+  padding: 1.3rem 0rem;
+  border-bottom: 0.2rem solid black;
+}
+
+.navigation li a {
+  margin: 1rem 0rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  /* background-color: red; */
+}
+
+.shakehand {
+  animation: pandulam 2s infinite cubic-bezier(0.03, 0.04, 1, 1);
+}
+
+@keyframes pandulam {
+  0% {
+    transform: rotateZ(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotateZ(5deg);
+    transform-origin: 50% 50%;
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+    transform-origin: 50% 50%;
+  }
+
+  30% {
+    transform: rotateZ(15deg);
+    transform-origin: 50% 50%;
+  }
+
+  40% {
+    transform: rotateZ(20deg);
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+    transform-origin: 50% 50%;
+  }
+
+  60% {
+    transform: rotateZ(20deg);
+    transform-origin: 50% 50%;
+  }
+
+  70% {
+    transform: rotateZ(15deg);
+    transform-origin: 50% 50%;
+  }
+
+  80% {
+    transform: rotateZ(10deg);
+    transform-origin: 50% 50%;
+  }
+
+  90% {
+    transform: rotateZ(5deg);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 50% 50%;
+  }
 }
