@@ -111,3 +111,12 @@
     transform-origin: 50% 50%;
   }
 }
+
+@media only screen and (max-width: 860px) {
+  .navigation ul li {
+    display: none;
+  }
+  .punch {
+    display: none;
+  }
+}
