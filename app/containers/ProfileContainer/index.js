@@ -12,7 +12,9 @@ import Profile from './../../components/Profile/index';
 export class ProfileContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Profile {...this.props}/>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <Profile {...this.props}/>
+      </div>
     );
   }
 }

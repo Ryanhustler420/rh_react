@@ -1,7 +1,5 @@
 /* This Sheet Use For Layout As Far As Possible */
 
-/* COMON_CODE */
-
 .grid {
   display: grid;
   padding: 10px;
@@ -15,12 +13,13 @@
   grid-template-rows: auto auto 50px;
   grid-template-columns: 300px 600px 230px;
   margin: 1rem 4rem;
+  transition: all .7s;
 }
 
 .BasicInfoGrid {
   grid-gap: 5px 5px;
-  grid-template-rows: 50px 10px;
-  grid-template-columns: 200px 350px;
+  grid-template-rows: 40px 30px;
+  grid-template-columns: 250px 250px;
 }
 
 .RatingGrid {
@@ -32,12 +31,43 @@
 .Actions {
   grid-gap: 2px 2px;
   grid-template-rows: 40px;
-  grid-template-columns: 50px 150px 150px 200px; 
+  grid-template-columns: 30px 100px 150px 110px; 
+}
+
+.Notification { }
+
+.leastImportant {
+  font-size: 2rem;
 }
 
 @media(max-width: 1250px) {
   .profile {
     grid-template-columns: 300px 600px;
+  }
+  .Notification {
+    display: none;
+  }
+}
+
+@media(max-width: 975px) {
+  .profile {
+    grid-template-columns: 300px 350px;
+  }
+  .BasicInfoGrid {
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(4, 30px);
+  }
+  .RatingGrid {
+    grid-template-columns: 310px;
+    grid-template-rows: 20px;
+  }
+  .Actions {
+    grid-template-columns: 300px; 
+    grid-template-rows: repeat(4, 40px);
+  }
+  .Left {
+    margin: 0 !important;
+    padding: 1rem;
   }
 }
 
@@ -92,18 +122,4 @@
 .defaultStyle a {
   text-decoration: none;
   font-size: 1.5rem;
-}
-
-/* Button Styles */
-
-button {
-  /* border: .5px solid #666666; */
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .4);
-  transition: all .6s;
-}
-
-button:hover{
-  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .6);
 }

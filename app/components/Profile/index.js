@@ -101,9 +101,9 @@ function Profile () {
             <div className={styles.defaultStyle}>
               <h1 className={styles.name}>Gaurav Gupta</h1>
             </div>
-            <div className={`${styles.Left} ${styles.defaultStyle}`}><h4>
+            <div className={`${styles.Left} ${styles.leastImportant}`}><small>
                 Jamshedpur, Jharkhand, India
-            </h4></div>
+            </small></div>
             <div className={styles.defaultStyle}>
               <h3>
                 <a href="#/Job/Programmer">Programmer</a>
@@ -128,15 +128,19 @@ function Profile () {
           {/************************* Actions *****************************/}
           {/* ACTIONS GRID */}
           <div className={`${styles.grid} ${styles.Actions}`}>
-            <h2 className={styles.defaultStyle}>Icon</h2>
-            <div className={`${styles.defaultStyle}`}>message</div>
-            <button className={`${styles.defaultStyle} ${styles.Left}`}> I Know Him &#10003; </button>
-            <small className={`${styles.defaultStyle} ${styles.Left}`}>Report user</small>
+            <h2 className={styles.defaultStyle}>
+              <h5>
+                <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918107/Message.png"/>
+              </h5>
+            </h2>
+            <small className={`${styles.defaultStyle}`}>Message</small>
+            <small className={`${styles.Left} ${styles.defaultStyle} `}> I Know Him &#10003; </small>
+            <small className={`${styles.Left} ${styles.leastImportant}`}>Report user</small>
           </div>
           {/* ACTIONS GRID ENDS */}
         </div>
-        <div className={styles.card}>
-          <div className={`${styles.defaultStyle}`}>
+        <div id="notification" className={styles.card}>
+          <div className={`${styles.grid} ${styles.Notification}`}>
             <h2>Real Time Notification(s)</h2>
           </div>
         </div>
