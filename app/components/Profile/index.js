@@ -12,10 +12,10 @@ import ImageCard from './../ImageCard/index';
 
 function Profile () {
   return (
-    <div className={styles.profile}>
+      <div className={`${styles.grid} ${styles.profile}`}>
       {/************************* Avatar && Sneak Peek *****************************/}
-      <Grid gutter={['50px','25px']} rows={['auto']} columns={['300px', '600px', '230px']}>
         <div className={styles.card}>
+          {/* LEFT START */}
           <ImageCard AvatarUrl={"https://avatars2.githubusercontent.com/u/25275856?s=460&v=4"} />
           <div className={styles.Padded}>
             <fieldset className={styles.Fieldset}>
@@ -93,16 +93,13 @@ function Profile () {
             </fieldset>
           </div>
         </div>
+        {/* LEFT END */}
+        {/************************* Basic Info *****************************/}
+        {/* BASIC INFO */}
         <div className={styles.card}>
-          {/************************* Basic Info *****************************/}
-          <Grid 
-            alignItems={"center"} 
-            gutter={['5px','5px']} 
-            rows={['50px', '10px']} 
-            columns={['200px', '350px']}
-          >
+          <div className={`${styles.grid} ${styles.BasicInfoGrid}`}>
             <div className={styles.defaultStyle}>
-              <h1 className={styles.name}>Jhon Doe</h1>
+              <h1 className={styles.name}>Gaurav Gupta</h1>
             </div>
             <div className={`${styles.Left} ${styles.defaultStyle}`}><h4>
                 Jamshedpur, Jharkhand, India
@@ -118,36 +115,32 @@ function Profile () {
                 Bookmark him
               </h5>  
             </div>
-          </Grid>
+          </div>       
+          {/* BASIC INFO ENDS */}
           {/************************* Ratings *****************************/}
-          <Grid
-            alignItems={"center"} 
-            gutter={['2px','2px']} 
-            rows={['30px']} 
-            columns={['500px']}
-          >
+          {/* RATING GRID */}
+          <div className={`${styles.grid} ${styles.RatingGrid}`}>
             <small className={styles.defaultStyle}>HOW GOOD HE IS ?
               <small> <a href="/user/gauravgupta840/comments"> (read comments) </a> </small>
             </small>
-          </Grid>
+          </div>
+          {/* RATING GRID ENDS */}
           {/************************* Actions *****************************/}
-          <Grid
-            alignItems={"center"} 
-            gutter={['2px','2px']} 
-            rows={['40px']} 
-            columns={['50px', '150px', '150px', '200px']}
-          >
+          {/* ACTIONS GRID */}
+          <div className={`${styles.grid} ${styles.Actions}`}>
             <h2 className={styles.defaultStyle}>Icon</h2>
             <div className={`${styles.defaultStyle}`}>message</div>
             <button className={`${styles.defaultStyle} ${styles.Left}`}> I Know Him &#10003; </button>
             <small className={`${styles.defaultStyle} ${styles.Left}`}>Report user</small>
-          </Grid>
+          </div>
+          {/* ACTIONS GRID ENDS */}
         </div>
         <div className={styles.card}>
-          Notifications
+          <div className={`${styles.defaultStyle}`}>
+            <h2>Real Time Notification(s)</h2>
+          </div>
         </div>
-      </Grid>
-    </div>
+      </div>
   );
 }
 
