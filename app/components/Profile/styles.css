@@ -36,11 +36,33 @@
 }
 
 .defaultStyle {
+  color: #666666;
   font-size: 2rem;
   padding: 1rem;
+}
+
+.defaultStyle .name {
+  font-size: 2rem;
+}
+
+.defaultStyle > h5 > img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .defaultStyle a {
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+button {
+  /* border: .5px solid #666666; */
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .4);
+  transition: all .6s;
+}
+
+button:hover{
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .6);
 }
