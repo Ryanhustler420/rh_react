@@ -21,6 +21,7 @@
 
 .gridContainer {
   display: grid;
+  grid-template-columns: .5rem auto;
   grid-template-areas:
     'avatar avatar content content content content content content content'
     'avatar avatar content content content content content content content'

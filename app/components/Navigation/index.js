@@ -24,7 +24,7 @@ function Navigation ({links, avatar}) {
         {/* Brand Name Falls Here */}
         Raisehand
         <small className={styles.punch}>
-          &nbsp; &quot;meant for humans&quot;
+          &nbsp; Meant for <span className={styles.change}></span>
         </small>
       </h3>
     </div>

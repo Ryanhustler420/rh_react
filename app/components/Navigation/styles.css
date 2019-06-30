@@ -1,53 +1,67 @@
-.navigation {
-  /* stylelint-disable */
+.navigation { /* stylelint-disable */
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  padding: .1rem;
 }
 
 .shadow {
-  box-shadow: 0.5px 1px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0.2px .1px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
 .navigation .brand {
+  align-self: center;
+  padding: 1rem 0;
   cursor: pointer;
   color: black;
-  margin: 1rem 0rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .navigation .image {
+  align-self: center;
   margin: 1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
   border-radius: 50%;
 }
 
 .navigation .punch {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: #666666;
 }
 
+.navigation .punch .change {
+  font-weight: bold;
+}
+
+.navigation .punch .change:after {
+  animation: changeWord 10s linear infinite;
+  display: inline;
+  content: "Student";
+}
+
 .navigation ul {
-  margin-top: 1.5rem;
+  align-self: center;
+  padding: 1.6rem 0;
   list-style-type: none;
 }
 
 .navigation li {
+  font-size: 1rem;
+  padding: 2rem .5rem;
   display: inline;
+  font-size: 1.4rem;
 }
 
 .navigation li:hover {
-  padding: 1.3rem 0rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.5rem solid black;
 }
 
 .navigation li a {
-  margin: 1rem 0rem;
+  padding: 2rem 1rem;
   text-decoration: none;
-  color: inherit;
-  padding: 1rem;
-  /* background-color: red; */
+  color: inherit;  
 }
 
 .shakehand {
@@ -108,6 +122,22 @@
   100% {
     transform: rotateZ(0deg);
     transform-origin: 50% 50%;
+  }
+}
+
+@keyframes changeWord {
+  0% {
+    content: "Student";
+  }
+
+  50% {
+    color: #666666;
+    content: "Business";
+  }
+
+  100% {
+    color: #666666;
+    content: "Job Seeker";
   }
 }
 
