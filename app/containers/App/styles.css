@@ -19,11 +19,12 @@ html {
 
 body {
   line-height: 1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 100;
   line-height: 1.6;
 }
 
 .container {
   display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

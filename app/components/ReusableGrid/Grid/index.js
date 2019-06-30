@@ -8,7 +8,7 @@ import React from 'react';
 
 import styles from './styles.css';
 
-function Grid({children, gutter, rows, columns, padding}) {
+function Grid({children, gutter, rows, columns, padding, alignItems}) {
   const calculate = array =>
     array.map (e => e).toString ().split (',').join (' ');
 
@@ -22,6 +22,7 @@ function Grid({children, gutter, rows, columns, padding}) {
         padding: padding,
         gridTemplateColumns: calculate (columns),
         gridTemplateRows: calculate (rows),
+        alignItems: alignItems        
       }}
     >
       {children}
@@ -34,10 +35,12 @@ Grid.PropTypes = {
   rows: React.PropTypes.array.isRequired,
   columns: React.PropTypes.array.isRequired,
   padding: React.PropTypes.string,
+  alignItems: React.PropTypes.string,
 };
 
 Grid.defaultProps = {
   padding: '10px',
+  alignItems: 'stretch'
 };
 
 export default Grid;

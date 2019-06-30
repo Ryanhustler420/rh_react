@@ -89,7 +89,29 @@ function Profile () {
           </div>
         </div>
         <div className={styles.card}>
-          Content
+          <Grid 
+            alignItems={"center"} 
+            gutter={['5px','5px']} 
+            rows={['50px', '50px']} 
+            columns={['200px', '320px']}
+          >
+            <div className={styles.defaultStyle}>
+              <h1>Jhon Doe</h1>
+            </div>
+            <div className={`${styles.Left} ${styles.defaultStyle}`}><h4>
+                Jamshedpur, Jharkhand, India
+            </h4></div>
+            <div className={styles.defaultStyle}>
+              <h3>
+                <a href="#/Job/Programmer">Programmer</a>
+              </h3>
+            </div>
+            <div className={`${styles.Left} ${styles.defaultStyle}`}>
+              <h5>
+                Bookmark him
+              </h5>  
+            </div>
+          </Grid>
         </div>
         <div className={styles.card}>
           Notifications
