@@ -2,8 +2,24 @@
   margin: 1rem 4rem;
 }
 
-.profile .card {
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.4);
+.card {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
   border: none;
   border-radius: 5px;
+}
+
+.About {
+  padding: .5rem;
+}
+
+.Fieldset {
+  border: .5rem solid grey;
+}
+
+.Legend {
+  font-size: 2rem;
+}
+
+.Fieldset > span {
+  font-size: 1.1rem;
 }
