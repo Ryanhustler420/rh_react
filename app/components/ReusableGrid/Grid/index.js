@@ -17,7 +17,7 @@ function Grid({children, gutter, rows, columns, padding}) {
       className={styles.grid}
       style={{
         display: 'grid',
-        gridRowGap: gutter,
+        gridGap: calculate(gutter),
         gridColumnGap: gutter,
         padding: padding,
         gridTemplateColumns: calculate (columns),

@@ -8,8 +8,15 @@
   border-radius: 5px;
 }
 
-.About {
+.Padded {
   padding: .5rem;
+}
+
+.Padded li,
+.Padded .UL {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding-left: 2rem;
 }
 
 .Fieldset {
