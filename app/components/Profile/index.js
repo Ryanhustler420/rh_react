@@ -7,7 +7,6 @@
 import React from 'react';
 
 import styles from './styles.css';
-import Grid from '../ReusableGrid/Grid';
 import ImageCard from './../ImageCard/index';
 
 function Profile () {
@@ -112,7 +111,7 @@ function Profile () {
             <div className={`${styles.Left} ${styles.defaultStyle}`}>
               <h5>
                 <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561897718/Tag.png" />
-                Bookmark him
+                &nbsp;Bookmark him
               </h5>  
             </div>
           </div>       
@@ -128,16 +127,40 @@ function Profile () {
           {/************************* Actions *****************************/}
           {/* ACTIONS GRID */}
           <div className={`${styles.grid} ${styles.Actions}`}>
-            <h2 className={styles.defaultStyle}>
+            <div className={styles.defaultStyle}>
               <h5>
                 <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918107/Message.png"/>
               </h5>
-            </h2>
+            </div>
             <small className={`${styles.defaultStyle}`}>Message</small>
             <small className={`${styles.Left} ${styles.defaultStyle} `}> I Know Him &#10003; </small>
             <small className={`${styles.Left} ${styles.leastImportant}`}>Report user</small>
           </div>
           {/* ACTIONS GRID ENDS */}
+          {/* SOCIAL ICONS */}
+          <div className={`${styles.grid} ${styles.SocialIcons}`}>
+            <div className={styles.defaultStyle}>
+              <h5>
+                <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918106/Facebook.png"/>
+              </h5>
+            </div>
+            <div className={styles.defaultStyle}>
+              <h5>
+                <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918107/twitter.png"/>
+              </h5>
+            </div>
+            <div className={styles.defaultStyle}>
+              <h5>
+                <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918106/insta.png"/>
+              </h5>
+            </div>
+            <div className={styles.defaultStyle}>
+              <h5>
+                <img src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561918106/git.png"/>
+              </h5>
+            </div>
+          </div>
+          {/* SOCIAL ICONS ENDS */}
         </div>
         <div id="notification" className={styles.card}>
           <div className={`${styles.grid} ${styles.Notification}`}>

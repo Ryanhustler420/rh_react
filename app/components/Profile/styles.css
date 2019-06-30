@@ -4,12 +4,13 @@
   display: grid;
   padding: 10px;
   align-items: center;
+  grid-gap: 5px 5px;
 }
 
 .profile { /* stylelint-disable */
   padding: 0;
   align-items: stretch;
-  grid-gap: 50px 25px;
+  grid-gap: 15px 15px;
   grid-template-rows: auto auto 50px;
   grid-template-columns: 300px 600px 230px;
   margin: 1rem 4rem;
@@ -17,21 +18,23 @@
 }
 
 .BasicInfoGrid {
-  grid-gap: 5px 5px;
-  grid-template-rows: 40px 30px;
+  grid-template-rows: 30px 30px;
   grid-template-columns: 250px 250px;
 }
 
 .RatingGrid {
-  grid-gap: 2px 2px;
   grid-template-rows: 30px;
   grid-template-columns: 500px;
 }
 
 .Actions {
-  grid-gap: 2px 2px;
-  grid-template-rows: 40px;
+  grid-template-rows: 30px;
   grid-template-columns: 30px 100px 150px 110px; 
+}
+
+.SocialIcons {
+  grid-template-rows: 30px;
+  grid-template-columns: repeat(4, 30px); 
 }
 
 .Notification { }
