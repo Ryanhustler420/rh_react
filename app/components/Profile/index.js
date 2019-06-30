@@ -7,25 +7,18 @@
 import React from 'react';
 
 import styles from './styles.css';
-import ImageCard from './../ImageCard/index';
+import Grid from '../ReusableGrid/Grid';
 
 function Profile () {
   return (
     <div className={styles.profile}>
-      <h3 className={styles.heading}>Profile</h3>
-      <div className={styles.gridContainer}>
-        <div className={styles.item2}>
-          <ImageCard 
-              AvatarUrl="https://avatars2.githubusercontent.com/u/25275856?s=460&v=4"      
-          />
-        </div>
-        <div className={styles.item1}>
-
-        </div>
-        <div className={styles.item3}>
-
-        </div>
-      </div>
+      <Grid gutter={15} 
+        rows={['100vh']} 
+        columns={['250px', '750px']}
+      >
+        <div className={styles.card}>Avatar</div>
+        <div className={styles.card}>Content</div>
+      </Grid>
     </div>
   );
 }
