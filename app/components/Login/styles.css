@@ -1,6 +1,6 @@
 .Grid {
   display: grid;
-  grid-gap: 3rem 3rem;
+  grid-row-gap: 3rem;
   font-size: 1.5rem;
 }
 
@@ -40,9 +40,9 @@
   padding: 2rem;
 }
 
-.RegLink {
+.LoginForm {
   grid-template-rows: auto;
-  justify-self: center;
+  grid-row-gap: 1rem;
 }
 
 .Split {
@@ -51,7 +51,13 @@
 
 .Actions {
   align-items: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: 18rem 1fr;
+  justify-items: center;
+}
+
+.RegLink {
+  grid-template-rows: auto;
+  justify-self: center;
 }
 
 .Footer {
@@ -59,7 +65,6 @@
   justify-content: center;
   grid-template-rows: 8vh;
 }
-
 
 /* Text Changer Elements And Keyframes */
 
@@ -75,11 +80,15 @@
 
 @keyframes changeWord {
   0% {
-    content: "Job Searching Engine";
+    content: "Job Search Engine";
   }
 
-  50% {
-    content: "Business Sell Booster";
+  30% {
+    content: "Business Engine";
+  }
+  
+  60% {
+    content: "Product Search Engine";
   }
 
   100% {
@@ -88,3 +97,23 @@
 }
 
 /* ends here....  */
+
+/* mediaQuerirs for responsiveness */
+
+@media(max-width: 1000px) {
+  .login {
+    padding: 3rem 0rem; 
+  }
+  .Form {
+    grid-template-columns: 0rem 35rem;
+  }
+  .StupidDialog {
+    display: none;
+  }
+  .LoginForm {
+    grid-template-columns: 30rem;
+  }
+  .Split {
+    grid-template-columns: auto;
+  }
+}

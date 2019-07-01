@@ -31,7 +31,9 @@ class Login extends React.Component {
           </Heading>
         </div>
         <div className={`${styles.Grid} ${styles.Form}`}>
-          <div style={{
+
+
+          <div className={styles.StupidDialog} style={{
             borderRight: '5px solid lightgray'
           }}>
             <Heading size={6} color="lightgrey">
@@ -49,7 +51,9 @@ class Login extends React.Component {
               <a href="#readmore">Read More &rarr; </a>
             </Heading>
           </div>
-          <div>
+
+
+          <div className={`${styles.Grid} ${styles.LoginForm}`}>
             <Heading size={3} pad="1rem .7rem" color="grey">Login Suite</Heading>
 
             <div className={`${styles.Grid} ${styles.Split}`}>
@@ -83,6 +87,8 @@ class Login extends React.Component {
             </div>
 
           </div>
+
+
         </div>
         <div className={`${styles.Grid} ${styles.RegLink}`}>
           <Heading size={6} color="grey">
