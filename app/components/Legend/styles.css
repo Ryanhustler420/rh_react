@@ -1,0 +1,18 @@
+.legend { /* stylelint-disable */
+  font-size: 2rem;
+}
+
+.Padded {
+  padding: .5rem;
+}
+
+.Padded li,
+.Padded .WORK {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.Fieldset {
+  border: .5rem solid grey;
+}

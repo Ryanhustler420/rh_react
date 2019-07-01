@@ -1,13 +1,20 @@
 /* This Sheet Use For Layout As Far As Possible */
 
-.grid {
+.grid { /* stylelint-disable */
   display: grid;
   padding: 1.5rem;
   align-items: center;
   grid-gap: 5px 5px;
 }
 
-.profile { /* stylelint-disable */
+.card {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+  border: none;
+  border-radius: 5px;
+}
+
+.profile {
+  /* Each Component Has This Which Defines The Layout */
   padding: 0;
   align-items: stretch;
   grid-gap: 15px 15px;
@@ -85,33 +92,9 @@
   }
 }
 
-.card {
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
-  border: none;
-  border-radius: 5px;
-}
 
 .Padded {
   padding: .5rem;
-}
-
-.Padded li,
-.Padded .UL {
-  font-size: 1.2rem;
-  list-style-type: none;
-  padding-left: 2rem;
-}
-
-.Fieldset {
-  border: .5rem solid grey;
-}
-
-.Legend {
-  font-size: 2rem;
-}
-
-.Fieldset > span {
-  font-size: 1.1rem;
 }
 
 .Left {

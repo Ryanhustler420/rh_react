@@ -9,91 +9,21 @@ import React from 'react';
 import styles from './styles.css';
 import ImageCard from './../ImageCard/index';
 import Tabs from './../Tabs/index';
+import Legend from './../Legend/index';
 
 function Profile () {
   return (
       <div className={`${styles.grid} ${styles.profile}`}>
-      {/************************* Avatar && Sneak Peek *****************************/}
-        <div className={styles.card}>
-          {/* LEFT START */}
-          <ImageCard AvatarUrl={"https://avatars2.githubusercontent.com/u/25275856?s=460&v=4"} />
-          <div className={styles.Padded}>
-            <fieldset className={styles.Fieldset}>
-              <legend className={styles.Legend}> &nbsp; Sneak peek &nbsp; </legend>
-              <div className={styles.Padded}>
-                <div className={styles.UL}>
-                  <span>Name: Gaurav Gupta</span><br />
-                  <span>Email: gouravgupta420@gmail.com</span><br />
-                  <span>Gender: Male</span><br />
-                  <span>Hobbie(s): [ programming, shopping, foodie ] </span><br />
-                  <span>Date of birth: 21st July 1997</span>
-                </div>
-              </div>
-            </fieldset>
+        {/************************* Avatar && Sneak Peek *****************************/}
+          <div className={styles.card}>
+            <ImageCard AvatarUrl={"https://avatars2.githubusercontent.com/u/25275856?s=460&v=4"} />
+            <Legend label={'Sneak Peek'} list={['Name: Gaurav Gupta','Gender: Male','Email: gouravgupta840@gmail.com',
+              'hobbies: Programming, Gaming, Music','Address: Jamshedpur Jharkhand India']}/>
+            <Legend type="work" list={[['TCS','Internship', '2 Months', 'Yamaha Showroom, NH33, Jamshedpur'],['My FutureBook','Internship', '2 Months', 'AIDIA, Adityapur, Jamshedpur']]} label="Work" />
+            <Legend label={'Skills'} list={['Marketing','Designer','Public Speaker','Computer','Programmer']}/>
+            <Legend label={'Qualifications'} list={['MBA in Marketing','BBA','Public Speaker']}/>
+            <Legend label={'Agree with Package'} list={['1.8 Lakh Pa']}/>
           </div>
-          <div className={styles.Padded}>
-            <fieldset className={styles.Fieldset}>
-              <legend className={styles.Legend}> &nbsp; Work &nbsp; </legend>
-              <div className={styles.Padded}>
-                <div className={styles.UL}>
-                  <h2>TCS</h2>
-                  <span>- Internship</span>
-                  <h4>&#10687; 2 Months</h4>
-                  <blockquote>
-                    Yamaha Showroom, NH33, Jamshedpur.
-                  </blockquote>
-                </div>
-              </div>
-              <div className={styles.Padded}>
-                <div className={styles.UL}>
-                  <h2>My FutureBook</h2>
-                  <span>- Internship</span>
-                  <h4>&#10687; 2 Months</h4>
-                  <blockquote>
-                    AIDIA, Adityapur, Jamshedpur
-                  </blockquote>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-          <div className={styles.Padded}>
-            <fieldset className={styles.Fieldset}>
-              <legend className={styles.Legend}> &nbsp; Skills &nbsp; </legend>
-              <div className={styles.Padded}>
-                <ul className={styles.Padded}>
-                  <li>Marketing</li>
-                  <li>Designer</li>
-                  <li>Public Speaker</li>
-                  <li>Computer</li>
-                  <li>Programmer</li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <div className={styles.Padded}>
-            <fieldset className={styles.Fieldset}>
-              <legend className={styles.Legend}> &nbsp; Qualifications &nbsp; </legend>
-              <div className={styles.Padded}>
-                <ul className={styles.Padded}>
-                  <li>MBA in Marketing</li>
-                  <li>BBA</li>
-                  <li>Public Speaking</li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <div className={styles.Padded}>
-            <fieldset className={styles.Fieldset}>
-              <legend className={styles.Legend}> &nbsp; Agree with Package &nbsp; </legend>
-              <div className={styles.Padded}>
-                <ul className={styles.Padded}>
-                  <li>1.8 Lakh Pa</li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-        {/* LEFT END */}
         {/************************* Basic Info *****************************/}
         {/* BASIC INFO */}
         <div className={styles.card}>
