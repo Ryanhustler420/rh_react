@@ -34,6 +34,8 @@ class Login extends React.Component {
             Raisehand
           </Heading>
         </div>
+
+        {/* FROM HERE */}
         <div className={`${styles.Grid} ${styles.Form}`}>
 
 
@@ -46,7 +48,9 @@ class Login extends React.Component {
             <Heading size={4} color="grey">
               Speed Up You Sell With Us.
             </Heading>
-            &nbsp; Understand <br />
+            <Heading size={5} color="grey">
+              Understand
+            </Heading>
             <Heading size={6}>
               “The way up and the way down are one and the same. Living and dead, 
               waking and sleeping, young and old, are the same.” - Unknown
@@ -94,6 +98,9 @@ class Login extends React.Component {
 
 
         </div>
+
+
+        {/* TO HERE */}
         <div className={`${styles.Grid} ${styles.RegLink}`}>
           <Heading size={6} color="grey">
             New here ? <a href="#signip"> Signup </a>

@@ -9,6 +9,7 @@
   padding: 5rem;
   grid-template-columns: auto;
   grid-template-rows: repeat(auto, 4) 1fr;
+  transition: all .7s;
 }
 
 .login > * {
@@ -33,7 +34,7 @@
   padding: 2rem;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
   grid-template-rows: auto;
-  grid-template-columns: 45rem 45rem;
+  grid-template-columns: 35rem 35rem;
 }
 
 .Form > * {
@@ -73,7 +74,7 @@
 }
 
 .change:after {
-  animation: changeWord 10s linear infinite;
+  animation: changeWord 15s linear infinite;
   display: inline;
   content: "Local Marketplace Engine";
 }
