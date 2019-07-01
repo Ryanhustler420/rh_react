@@ -1,0 +1,53 @@
+.responsiveFormSegment { /* stylelint-disable */
+
+}
+
+.Grid {
+  display: grid;
+  grid-row-gap: 3rem;
+  font-size: 1.5rem;
+}
+
+.Form {
+  padding: 2rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
+  grid-template-rows: auto;
+  grid-template-columns: 35rem 35rem;
+}
+
+.Form > * {
+  padding: 2rem;
+}
+
+.LoginForm {
+  grid-template-rows: auto;
+  grid-row-gap: 1rem;
+}
+
+.Split {
+  grid-template-columns: 30rem;
+}
+
+.Actions {
+  align-items: center;
+  grid-template-columns: 18rem 1fr;
+  /* justify-items: center; */
+}
+
+@media(max-width: 1000px) {
+  .login {
+    padding: 3rem 0rem; 
+  }
+  .Form {
+    grid-template-columns: 0rem 35rem;
+  }
+  .StupidDialog {
+    display: none;
+  }
+  .LoginForm {
+    grid-template-columns: 30rem;
+  }
+  .Split {
+    grid-template-columns: auto;
+  }
+}

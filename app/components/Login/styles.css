@@ -52,7 +52,7 @@
 
 .Actions {
   align-items: center;
-  grid-template-columns: 18rem 1fr;
+  grid-template-columns: 7rem 1fr;
   /* justify-items: center; */
 }
 

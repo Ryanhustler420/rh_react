@@ -12,6 +12,7 @@ import Heading from './../Heading/index';
 import Input from './../Input/index';
 import HandShake from './../HandShake/index';
 import Button from './../Button/index';
+import ResponsiveFormSegment from './../ResponsiveFormSegment/index';
 
 class Login extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -20,7 +21,7 @@ class Login extends React.Component {
       <div className={`${styles.Grid} ${styles.login}`}>
         <div className={`${styles.Grid} ${styles.Engine}`}>
           <Heading size={6} color="lightgrey">
-            <span className={styles.change}></span>
+            <span className={styles.change} />
           </Heading>
         </div>
         <div className={`${styles.Grid} ${styles.Brand}`}>
@@ -35,72 +36,62 @@ class Login extends React.Component {
           </Heading>
         </div>
 
-        {/* FROM HERE */}
-        <div className={`${styles.Grid} ${styles.Form}`}>
-
-
-          <div className={styles.StupidDialog} style={{
-            borderRight: '5px solid lightgray'
-          }}>
-            <Heading size={6} color="lightgrey">
-              Change is the only constant - anonymous
-            </Heading>
-            <Heading size={4} color="grey">
-              Speed Up You Sell With Us.
-            </Heading>
-            <Heading size={5} color="grey">
-              Understand
-            </Heading>
-            <Heading size={6}>
-              “The way up and the way down are one and the same. Living and dead, 
-              waking and sleeping, young and old, are the same.” - Unknown
-            </Heading>
-            <Heading>
-              <a href="#readmore">Read More &rarr; </a>
-            </Heading>
-          </div>
-
-
-          <div className={`${styles.Grid} ${styles.LoginForm}`}>
-            <Heading size={3} pad="1rem .7rem" color="grey">Login Suite</Heading>
-
-            <div className={`${styles.Grid} ${styles.Split}`}>
+        <ResponsiveFormSegment
+          left={
+            <div>
+              <Heading size={6} color="lightgrey">
+                Change is the only constant - anonymous
+              </Heading>
+              <Heading size={4} color="grey">
+                Speed Up You Sell With Us.
+              </Heading>
+              <Heading size={5} color="grey">
+                Understand
+              </Heading>
+              <Heading size={6}>
+                “The way up and the way down are one and the same. Living and dead,
+                {' '}
+                waking and sleeping, young and old, are the same.” - Unknown
+              </Heading>
+              <Heading>
+                <a href="#readmore">Read More &rarr; </a>
+              </Heading>
+            </div>
+          }
+          formName="Login Suite"
+          right={
+            <div>
               <div>
-                <Input 
-                  name="Email" 
+                <Input
+                  name="Email"
                   // danger
                   // success={false}
                   type="email"
                   errormessage="Email is wrong."
-                  placeholder="Email" value=""
+                  placeholder="Email"
+                  value=""
                 />
-                <Input 
+                <Input
                   name="Password"
                   // danger={false}
                   // success={true}
-                  value="system" 
+                  value="system"
                   errormessage="Password is wrong"
-                  type="password" placeholder="Password" 
+                  type="password"
+                  placeholder="Password"
                 />
               </div>
             </div>
-
-
-            <div className={`${styles.Grid} ${styles.Actions}`}>
-              <Heading size={6} color="grey">
+          }
+          actions={[
+              <Heading key="1" size={6} color="grey">
                 Forgot Password? &nbsp;
                 <a href="#reset">Reset</a>
-              </Heading>
-              <Button clickable type="right" >Login</Button>
-            </div>
+              </Heading>,
+              <Button key="2" clickable type="right">Login</Button>
+          ]}
+        />
 
-          </div>
-
-
-        </div>
-
-
-        {/* TO HERE */}
         <div className={`${styles.Grid} ${styles.RegLink}`}>
           <Heading size={6} color="grey">
             New here ? <a href="#signip"> Signup </a>
