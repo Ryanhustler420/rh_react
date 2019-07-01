@@ -7,6 +7,7 @@
 import React from 'react';
 
 import styles from './styles.css';
+import Icon from './../Icon/index';
 
 function Navigation ({links, avatar}) {
 
@@ -18,18 +19,22 @@ function Navigation ({links, avatar}) {
 
   return (
     <div className={`${styles.navigation}`}>
-    <div className={styles.navigation}>
-      <img className={`${styles.image} ${styles.shakehand}`} src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png"/>
-      <h3 className={styles.brand}>
-        Raisehand
-        <small className={styles.punch}>
-          &nbsp; Meant for <span className={styles.change}></span>
-        </small>
-      </h3>
-    </div>
+      <div className={styles.navigation}>
+        <div className={`${styles.image} ${styles.shakehand}`}>
+          <Icon size="2.5rem" ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png" className={styles.shakehand}></Icon>
+        </div>
+        <h3 className={styles.brand}>
+          Raisehand
+          <small className={styles.punch}>
+            &nbsp; Meant for <span className={styles.change}></span>
+          </small>
+        </h3>
+      </div>
       <div className={styles.navigation}>
         <ul> {renderLinks()} </ul>
-        <img className={styles.image} src={`${avatar}`} />
+        <div className={`${styles.image}`}>
+          <Icon size="2.5rem" ImageUrl={avatar} className={styles.shakehand}></Icon>
+        </div>
       </div>
     </div>
   );

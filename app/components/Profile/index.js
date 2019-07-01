@@ -16,6 +16,7 @@ import Icon from './../Icon/index';
 function Profile () {
   return (
       <div className={`${styles.grid} ${styles.profile}`}>
+
         {/************************* Avatar && Sneak Peek *****************************/}
         <div className={styles.card}>
           <ImageCard AvatarUrl={"https://avatars2.githubusercontent.com/u/25275856?s=460&v=4"} />
@@ -104,6 +105,7 @@ function Profile () {
           </div>
         </div>
 
+        {/* Real Time Notification */}
         <div id="notification" className={styles.card}>
           <div className={`${styles.grid} ${styles.Notification}`}>
             <h2>Real Time Notification(s)</h2>
