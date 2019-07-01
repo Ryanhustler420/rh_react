@@ -19,7 +19,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
   render() {
     return (
       <div>
-        <NavigationContainer />
+        {/* <NavigationContainer /> */}
         {/* <ProfileContainer /> */}
         <AuthContainer />
       </div>

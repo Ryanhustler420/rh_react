@@ -16,7 +16,7 @@ import styles from './styles.css';
  * 
  */
 
-function Heading({children, size, color}) {
+function Heading({children, size, color, pad}) {
   const templte = [
     <h1>{children}</h1>,
     <h2>{children}</h2>,
@@ -26,7 +26,7 @@ function Heading({children, size, color}) {
     <h6>{children}</h6>,
   ];
   return (
-    <div className={styles.heading} style={{color}}>
+    <div className={styles.heading} style={{color, padding: pad}}>
       {size <= 6 && size >= 1 ? templte[size - 1] : templte[5]}
     </div>
   );
@@ -37,11 +37,13 @@ function Heading({children, size, color}) {
 Heading.propTypes = {
   color: React.PropTypes.string,
   size: React.PropTypes.number,
+  pad: React.PropTypes.string
 }
 
 Heading.defaultProps = {
   color: 'black',
-  size: 5
+  size: 5,
+  pad: '1rem',
 }
 
 export default Heading;
