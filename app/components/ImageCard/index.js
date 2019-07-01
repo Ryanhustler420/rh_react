@@ -17,7 +17,7 @@ function ImageCard({AvatarUrl}) {
   );
 }
 
-ImageCard.PropTypes = {
+ImageCard.propTypes = {
   AvatarUrl: React.PropTypes.string.isRequired,
 }
 

@@ -18,4 +18,8 @@ function Icon({ ImageUrl, children }) {
   );
 }
 
+Icon.propTypes = {
+  ImageUrl: React.PropTypes.string.isRequired,
+}
+
 export default Icon;

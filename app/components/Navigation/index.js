@@ -17,11 +17,10 @@ function Navigation ({links, avatar}) {
   }
 
   return (
-    <div className={`${styles.navigation} ${styles.shadow}`}>
+    <div className={`${styles.navigation}`}>
     <div className={styles.navigation}>
       <img className={`${styles.image} ${styles.shakehand}`} src="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png"/>
       <h3 className={styles.brand}>
-        {/* Brand Name Falls Here */}
         Raisehand
         <small className={styles.punch}>
           &nbsp; Meant for <span className={styles.change}></span>
@@ -29,10 +28,7 @@ function Navigation ({links, avatar}) {
       </h3>
     </div>
       <div className={styles.navigation}>
-        <ul>
-          {renderLinks()}     
-        </ul>
-        {/* <img className={styles.image} src="https://avatars2.githubusercontent.com/u/25275856?s=460&v=4" /> */}
+        <ul> {renderLinks()} </ul>
         <img className={styles.image} src={`${avatar}`} />
       </div>
     </div>

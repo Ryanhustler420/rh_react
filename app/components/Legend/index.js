@@ -8,7 +8,7 @@ import React from 'react';
 
 import styles from './styles.css';
 
-function Legend({list, label, type = 'normal'}) {
+function Legend({list, label, type = 'normal' }) {
   // Pass One Dimension Array.
   const renderList = () => list.map ((item, i) => <li key={i}>{item}</li>);
 
@@ -46,9 +46,14 @@ function Legend({list, label, type = 'normal'}) {
   );
 }
 
-// Legend.PropTypes = {
+// Legend.propTypes = {
 //   list: React.PropTypes.array().isRequired,
 //   label: React.PropTypes.string.isRequired,
+//   type: React.PropTypes.string,
+// }
+
+// Legend.defaultProps = {
+//   type: 'normal'
 // }
 
 export default Legend;

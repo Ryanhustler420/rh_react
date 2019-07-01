@@ -34,8 +34,14 @@ function Heading({children, size, color}) {
 
 // Props Validation
 
+Heading.propTypes = {
+  color: React.PropTypes.string,
+  size: React.PropTypes.number,
+}
+
 Heading.defaultProps = {
-  color: 'black'
+  color: 'black',
+  size: 5
 }
 
 export default Heading;
