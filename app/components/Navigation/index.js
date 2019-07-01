@@ -19,6 +19,7 @@ function Navigation ({links, avatar}) {
 
   return (
     <div className={`${styles.navigation}`}>
+
       <div className={styles.navigation}>
         <div className={`${styles.image} ${styles.shakehand}`}>
           <Icon size="2.5rem" ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png" className={styles.shakehand}></Icon>
@@ -30,10 +31,11 @@ function Navigation ({links, avatar}) {
           </small>
         </h3>
       </div>
+
       <div className={styles.navigation}>
         <ul> {renderLinks()} </ul>
         <div className={`${styles.image}`}>
-          <Icon size="2.5rem" ImageUrl={avatar} className={styles.shakehand}></Icon>
+          <Icon rounded size="2.5rem" ImageUrl={avatar} className={styles.shakehand}></Icon>
         </div>
       </div>
     </div>
