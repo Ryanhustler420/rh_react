@@ -10,7 +10,7 @@
  */
 
 import React from 'react';
-// import NavigationContainer from '../../containers/NavigationContainer';
+import NavigationContainer from '../../containers/NavigationContainer';
 // import { ProfileContainer } from './../ProfileContainer/index';
 import { AuthContainer } from '../AuthContainer/index';
 
@@ -19,7 +19,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
   render() {
     return (
       <div>
-        {/* <NavigationContainer /> */}
+        <NavigationContainer />
         {/* <ProfileContainer /> */}
         <AuthContainer />
       </div>
