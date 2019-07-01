@@ -9,6 +9,7 @@ import React from 'react';
 import styles from './styles.css';
 import Icon from './../Icon/index';
 import Heading from './../Heading/index';
+import Input from './../Input/index';
 
 class Login extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -17,7 +18,7 @@ class Login extends React.Component {
       <div className={`${styles.Grid} ${styles.login}`}>
         <div className={`${styles.Grid} ${styles.Engine}`}>
           <Heading size={6} color="lightgrey">
-            Marketplace Engine
+            <span className={styles.change}></span>
           </Heading>
         </div>
         <div className={`${styles.Grid} ${styles.Brand}`}>
@@ -51,25 +52,26 @@ class Login extends React.Component {
           <div>
             <Heading size={3} pad="1rem .7rem" color="grey">Login Suite</Heading>
 
-          <div className={`${styles.Grid} ${styles.Split}`}>
-
-            <div>
-              {/* Login Input Fields Goes Here */}
-              <div className={`${styles.InputField}`}>
-                <input /* className={styles.danger} */ type="email" placeholder="EMAIL ID" />
-                <Heading pad=".5rem" size={6} color="red">
-                  {/* &nbsp; This username does not exist. */}
-                </Heading>
-              </div>
-              <div className={`${styles.InputField}`}>
-                <input /* className={styles.success} */ type="password" placeholder="PASSWORD" />
-                <Heading pad=".5rem" size={6} color="red">
-                  {/* &nbsp; Your password is wrong. */}
-                </Heading>
+            <div className={`${styles.Grid} ${styles.Split}`}>
+              <div>
+                <Input 
+                  name="Email" 
+                  // danger
+                  // success={false}
+                  type="email"
+                  errormessage="Email is wrong."
+                  placeholder="Email" value=""
+                />
+                <Input 
+                  name="Password"
+                  // danger={false}
+                  // success={true}
+                  value="system" 
+                  errormessage="Password is wrong"
+                  type="password" placeholder="Password" 
+                />
               </div>
             </div>
-
-          </div>
 
 
             <div className={`${styles.Grid} ${styles.Actions}`}>

@@ -45,32 +45,6 @@
   justify-self: center;
 }
 
-.InputField {
-  /* padding: 1rem; */
-  display: grid;
-  align-items: center;
-  grid-template-rows: 35px 30px;
-  grid-template-columns: auto;
-  transition: all .7s;
-}
-
-.InputField > input {
-  border: 1px solid grey;
-  padding: 8px;
-  border-radius: 25px;
-  width: 100%;
-  outline: none;
-}
-
-.InputField .danger {
-  border: 1px solid darkred;
-  animation: shake 0.5s;
-}
-
-.InputField .success {
-  border: 1px solid darkgreen;
-}
-
 .Split {
   grid-template-columns: 23rem;
 }
@@ -86,40 +60,31 @@
   grid-template-rows: 8vh;
 }
 
-/* Input Animations */
 
-@keyframes shake {
+/* Text Changer Elements And Keyframes */
+
+.change {
+  font-weight: bolder;
+}
+
+.change:after {
+  animation: changeWord 10s linear infinite;
+  display: inline;
+  content: "Local Marketplace Engine";
+}
+
+@keyframes changeWord {
   0% {
-    transform: translate(1px, 1px) rotate(0deg);
+    content: "Job Searching Engine";
   }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
+
   50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
+    content: "Business Sell Booster";
   }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
+
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    content: "Local Marketplace Engine";
   }
 }
+
+/* ends here....  */
