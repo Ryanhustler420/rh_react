@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect';
+import { createSelector } from './node_modules/reselect';
 
 /**
  * Direct selector to the authContainer state domain
