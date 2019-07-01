@@ -1,0 +1,20 @@
+.Button { /* stylelint-disable */
+  outline: none;
+  border: 1px solid black;
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
+  background-color: grey;
+  color: whitesmoke;
+}
+
+.ButtonRight {
+  border-radius: 0px 25px 25px 0px; 
+}
+
+.ButtonLeft {
+  border-radius: 25px 0px 0px 25px;
+}
+
+.pointer {
+  cursor: pointer;
+}

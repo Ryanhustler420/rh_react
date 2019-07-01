@@ -11,6 +11,7 @@ import Icon from './../Icon/index';
 import Heading from './../Heading/index';
 import Input from './../Input/index';
 import HandShake from './../HandShake/index';
+import Button from './../Button/index';
 
 class Login extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -86,7 +87,7 @@ class Login extends React.Component {
                 Forgot Password? &nbsp;
                 <a href="#reset">Reset</a>
               </Heading>
-              <div>Login</div>
+              <Button clickable type="right" >Login</Button>
             </div>
 
           </div>
