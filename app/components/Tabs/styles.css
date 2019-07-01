@@ -1,0 +1,13 @@
+.tabs { /* stylelint-disable */
+
+}
+
+.tabList {
+  display: inline-flex;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.Content {
+  /* Container style goes here... */
+}

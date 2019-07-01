@@ -2,7 +2,7 @@
 
 .grid {
   display: grid;
-  padding: 10px;
+  padding: 1.5rem;
   align-items: center;
   grid-gap: 5px 5px;
 }
@@ -11,7 +11,7 @@
   padding: 0;
   align-items: stretch;
   grid-gap: 15px 15px;
-  grid-template-rows: auto auto 50px;
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 300px 600px 230px;
   margin: 1rem 4rem;
   transition: all .7s;
@@ -19,7 +19,7 @@
 
 .BasicInfoGrid {
   grid-template-rows: 30px 30px;
-  grid-template-columns: 250px 250px;
+  grid-template-columns: 250px 300px;
 }
 
 .RatingGrid {
@@ -34,7 +34,12 @@
 
 .SocialIcons {
   grid-template-rows: 30px;
-  grid-template-columns: repeat(4, 30px); 
+  grid-template-columns: repeat(4, 30px);
+}
+
+.Tabs {
+  align-items: flex-start;
+  grid-template-rows: auto;
 }
 
 .Notification { }
@@ -71,6 +76,12 @@
   .Left {
     margin: 0 !important;
     padding: 1rem;
+  }
+}
+
+@media(max-width: 650px) {
+  .profile {
+    grid-template-columns: 300px;
   }
 }
 

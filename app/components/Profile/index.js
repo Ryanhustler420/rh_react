@@ -8,6 +8,7 @@ import React from 'react';
 
 import styles from './styles.css';
 import ImageCard from './../ImageCard/index';
+import Tabs from './../Tabs/index';
 
 function Profile () {
   return (
@@ -161,6 +162,31 @@ function Profile () {
             </div>
           </div>
           {/* SOCIAL ICONS ENDS */}
+          {/* TABS */}
+          <div className={`${styles.Padded}`}>
+            <div className={`${styles.grid} ${styles.Tabs}`}>
+              <Tabs>
+                <div label="Spider Post">
+                  <br />
+                  Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.
+                  Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.
+                  Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.
+                  Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.
+                  Dolore sunt esse duis ullamco. Voluptate eu sit excepteur aute commodo Lorem aliqua elit occaecat esse. Mollit nulla eiusmod aliqua qui in excepteur sint dolore eiusmod dolore incididunt occaecat laborum incididunt. Duis enim mollit ipsum anim anim incididunt adipisicing mollit ipsum commodo mollit. Irure ipsum do fugiat irure occaecat consequat. Deserunt ex mollit ipsum voluptate.
+                </div>
+                <div label="Events">
+                  After 'while, <em>Crocodile</em>!
+                </div>
+                <div label="Upgrade Skills">
+                  Nothing to see here, this tab is <em>extinct</em>!
+                </div>
+                <div label="Community">
+                  Nothing to see here, this tab is <em>extinct</em>!
+                </div>
+              </Tabs>
+            </div>
+          </div>
+          {/* TABS ENDS */}
         </div>
         <div id="notification" className={styles.card}>
           <div className={`${styles.grid} ${styles.Notification}`}>
