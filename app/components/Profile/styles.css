@@ -29,14 +29,9 @@
   grid-template-columns: 250px 300px;
 }
 
-.RatingGrid {
-  grid-template-rows: 30px;
-  grid-template-columns: 500px;
-}
-
 .Actions {
   grid-template-rows: 30px;
-  grid-template-columns: 30px 100px 150px 110px; 
+  grid-template-columns: 125px 130px 100px; 
 }
 
 .SocialIcons {
@@ -51,9 +46,10 @@
 
 .Notification { }
 
-.leastImportant {
-  font-size: 2rem;
+.Left {
+  margin-left: auto;
 }
+
 
 @media(max-width: 1250px) {
   .profile {
@@ -82,7 +78,6 @@
   }
   .Left {
     margin: 0 !important;
-    padding: 1rem;
   }
 }
 
@@ -92,26 +87,7 @@
   }
 }
 
-
-.Padded {
-  padding: .5rem;
-}
-
-.Left {
-  margin-left: auto;
-}
-
-.defaultStyle {
-  color: #666666;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.defaultStyle .name {
-  font-size: 2rem;
-}
-
-.defaultStyle > h5 > img {
+.Icon > img {
   width: 2rem;
   height: 2rem;
 }

@@ -1,0 +1,15 @@
+.heading { /* stylelint-disable */
+  color: #666666;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.heading a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.Icon > img {
+  width: 2rem;
+  height: 2rem;
+}
