@@ -10,7 +10,7 @@
  */
 
 import React from 'react';
-import NavigationContainer from '../../containers/NavigationContainer';
+// import NavigationContainer from '../../containers/NavigationContainer';
 // import { ProfileContainer } from './../ProfileContainer/index';
 import { AuthContainer } from '../AuthContainer/index';
 

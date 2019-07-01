@@ -8,6 +8,7 @@ import React from 'react';
 
 import styles from './styles.css';
 import Icon from './../Icon/index';
+import HandShake from './../HandShake/index';
 
 function Navigation ({links, avatar}) {
 
@@ -21,8 +22,10 @@ function Navigation ({links, avatar}) {
     <div className={`${styles.navigation}`}>
 
       <div className={styles.navigation}>
-        <div className={`${styles.image} ${styles.shakehand}`}>
-          <Icon size="2.5rem" ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png" className={styles.shakehand}></Icon>
+        <div className={`${styles.image}`}>
+          <HandShake>
+            <Icon size="2.5rem" ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png" className={styles.shakehand}></Icon>
+          </HandShake>
         </div>
         <h3 className={styles.brand}>
           Raisehand

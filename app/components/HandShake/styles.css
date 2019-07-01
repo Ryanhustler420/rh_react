@@ -1,0 +1,60 @@
+.handShake { /* stylelint-disable */
+  animation: pandulam 3s infinite cubic-bezier(0.03, 0.04, 1, 1);
+}
+
+@keyframes pandulam {
+  0% {
+    transform: rotateZ(0deg);
+    transform-origin: 50% 85%;
+  }
+
+  10% {
+    transform: rotateZ(5deg);
+    transform-origin: 50% 85%;
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+    transform-origin: 50% 85%;
+  }
+
+  30% {
+    transform: rotateZ(15deg);
+    transform-origin: 50% 85%;
+  }
+
+  40% {
+    transform: rotateZ(20deg);
+    transform-origin: 50% 85%;
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+    transform-origin: 50% 85%;
+  }
+
+  60% {
+    transform: rotateZ(20deg);
+    transform-origin: 50% 85%;
+  }
+
+  70% {
+    transform: rotateZ(15deg);
+    transform-origin: 50% 85%;
+  }
+
+  80% {
+    transform: rotateZ(10deg);
+    transform-origin: 50% 85%;
+  }
+
+  90% {
+    transform: rotateZ(5deg);
+    transform-origin: 50% 85%;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 50% 85%;
+  }
+}

@@ -10,6 +10,7 @@ import styles from './styles.css';
 import Icon from './../Icon/index';
 import Heading from './../Heading/index';
 import Input from './../Input/index';
+import HandShake from './../HandShake/index';
 
 class Login extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -22,10 +23,12 @@ class Login extends React.Component {
           </Heading>
         </div>
         <div className={`${styles.Grid} ${styles.Brand}`}>
-          <Icon
-            ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png"
-            size="5rem"
-          />
+          <HandShake>
+            <Icon
+              ImageUrl="https://res.cloudinary.com/dcalvdelc/image/upload/v1561832703/hand2.png"
+              size="5rem"
+            />
+          </HandShake>
           <Heading size={2}>
             Raisehand
           </Heading>
