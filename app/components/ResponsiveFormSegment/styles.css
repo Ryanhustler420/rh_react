@@ -12,7 +12,7 @@
   padding: 2rem;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
   grid-template-rows: auto;
-  grid-template-columns: 35rem 35rem;
+  grid-template-columns: 40rem 40rem;
 }
 
 .Form > * {

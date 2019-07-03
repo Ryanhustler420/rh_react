@@ -1,3 +1,92 @@
-.signup { /* stylelint-disable */
+.Grid { /* stylelint-disable */
+  display: grid;
+  grid-row-gap: 3rem;
+  font-size: 1.5rem;
+}
 
+.Signup {
+  padding: 5rem;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(auto, 4) 1fr;
+  transition: all .7s;
+}
+
+.Signup > * {
+  border: none;
+  border-radius: 2rem;
+}
+
+.Engine {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Brand {
+  align-items: center;
+  display: inline-flex;
+  justify-self: center;
+}
+
+.RegLink {
+  grid-template-rows: auto;
+  justify-self: center;
+}
+
+.Footer {
+  align-items: end;
+  justify-content: center;
+  grid-template-rows: 8vh;
+}
+
+/* Text Changer Elements And Keyframes */
+
+.change {
+  font-weight: bolder;
+}
+
+.change:after {
+  animation: changeWord 15s linear infinite;
+  display: inline;
+  content: "Local Marketplace Engine";
+}
+
+@keyframes changeWord {
+  0% {
+    content: "Job Search Engine";
+  }
+
+  30% {
+    content: "Business Engine";
+  }
+  
+  60% {
+    content: "Product Search Engine";
+  }
+
+  100% {
+    content: "Local Marketplace Engine";
+  }
+}
+
+/* ends here....  */
+
+/* mediaQuerirs for responsiveness */
+
+@media(max-width: 1000px) {
+  .Signup {
+    padding: 3rem 0rem; 
+  }
+  .Form {
+    grid-template-columns: 0rem 35rem;
+  }
+  .StupidDialog {
+    display: none;
+  }
+  .SignupForm {
+    grid-template-columns: 30rem;
+  }
+  .Split {
+    grid-template-columns: auto;
+  }
 }

@@ -9,7 +9,7 @@
   padding: 5rem;
   grid-template-columns: auto;
   grid-template-rows: repeat(auto, 4) 1fr;
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 .login > * {
@@ -28,32 +28,6 @@
   align-items: center;
   display: inline-flex;
   justify-self: center;
-}
-
-.Form {
-  padding: 2rem;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
-  grid-template-rows: auto;
-  grid-template-columns: 35rem 35rem;
-}
-
-.Form > * {
-  padding: 2rem;
-}
-
-.LoginForm {
-  grid-template-rows: auto;
-  grid-row-gap: 1rem;
-}
-
-.Split {
-  grid-template-columns: 30rem;
-}
-
-.Actions {
-  align-items: center;
-  grid-template-columns: 7rem 1fr;
-  /* justify-items: center; */
 }
 
 .RegLink {
@@ -76,24 +50,24 @@
 .change:after {
   animation: changeWord 15s linear infinite;
   display: inline;
-  content: "Local Marketplace Engine";
+  content: 'Local Marketplace Engine';
 }
 
 @keyframes changeWord {
   0% {
-    content: "Job Search Engine";
+    content: 'Job Search Engine';
   }
 
   30% {
-    content: "Business Engine";
+    content: 'Business Engine';
   }
-  
+
   60% {
-    content: "Product Search Engine";
+    content: 'Product Search Engine';
   }
 
   100% {
-    content: "Local Marketplace Engine";
+    content: 'Local Marketplace Engine';
   }
 }
 
@@ -101,9 +75,9 @@
 
 /* mediaQuerirs for responsiveness */
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .login {
-    padding: 3rem 0rem; 
+    padding: 3rem 0rem;
   }
   .Form {
     grid-template-columns: 0rem 35rem;

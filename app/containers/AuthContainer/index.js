@@ -7,13 +7,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import selectAuthContainer from './selectors';
-import Login from '../../components/Login/index';
+// import Login from '../../components/Login/index';
+import Signup from '../../components/Signup/index';
 
 export class AuthContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Login {...this.props}/>
+        {/* <Login {...this.props}/> */}
+        <Signup {...this.props}/>
       </div>
     );
   }
