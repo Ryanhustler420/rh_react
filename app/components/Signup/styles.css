@@ -1,4 +1,65 @@
-.Grid { /* stylelint-disable */
+/* stylelint-disable */
+
+.Grid {
+  display: grid;
+  grid-gap: 5px 5px;
+}
+
+.Grid > * {
+  padding: 1rem;
+}
+
+/* Utility Class */
+.border {
+  border: 1px solid black;
+  padding: 2rem;
+}
+/* Utility Class */
+
+
+.Grid1Of2 {
+  grid-template-columns: 50vw 50vw;
+  background-color: red;
+  border: 1px solid black;
+}
+
+
+/* One Of Three [ |       |  | ] */
+
+.Grid1Of3 {
+  grid-template-columns: 33.33vw 33.33vw 33.33vw;
+  background-color: green;
+  border: 1px solid black;
+}
+
+/* Define Your Own Break Points As per your requirements */
+
+@media(max-width:1200px) {
+  .Grid1Of3_remove1 {
+    display: none;
+  }
+  .Grid1Of3 {
+    grid-template-columns: 50vw 50vw;
+  }
+}
+
+@media(max-width: 850px) {
+  .Grid1Of3_remove2 {
+    display: none;
+  }
+  .Grid1Of3 {
+    grid-template-columns: 100vw;
+  }
+}
+
+
+/* 
+
+.Grid1Of3_remove2 {
+  display: none;
+} */
+
+/* .Grid { 
   display: grid;
   grid-row-gap: 3rem;
   font-size: 1.5rem;
@@ -26,9 +87,9 @@
   align-items: center;
   display: inline-flex;
   justify-self: center;
-}
+} */
 
-.RegLink {
+/* .RegLink {
   grid-template-rows: auto;
   justify-self: center;
 }
@@ -37,10 +98,10 @@
   align-items: end;
   justify-content: center;
   grid-template-rows: 8vh;
-}
+} */
 
 /* Text Changer Elements And Keyframes */
-
+/* 
 .change {
   font-weight: bolder;
 }
@@ -49,9 +110,9 @@
   animation: changeWord 15s linear infinite;
   display: inline;
   content: "Local Marketplace Engine";
-}
+} */
 
-@keyframes changeWord {
+/* @keyframes changeWord {
   0% {
     content: "Job Search Engine";
   }
@@ -67,13 +128,13 @@
   100% {
     content: "Local Marketplace Engine";
   }
-}
+} */
 
 /* ends here....  */
 
 /* mediaQuerirs for responsiveness */
 
-@media(max-width: 1000px) {
+/* @media(max-width: 1000px) {
   .Signup {
     padding: 3rem 0rem; 
   }
@@ -89,4 +150,4 @@
   .Split {
     grid-template-columns: auto;
   }
-}
+} */
